@@ -3,6 +3,8 @@ import Development from "../assets/development.png";
 import CompetitiveProgramming from "../assets/competitive-programming.png";
 import Institute from "../assets/institute.png";
 import EventOrganized from "../assets/project-management.png";
+import Project from "../assets/project-idea.png";
+import ML from "../assets/ml.png"
 
 const aboutItems = [
   {
@@ -25,7 +27,16 @@ const aboutItems = [
     img: EventOrganized,
     text: "I have organized 40+ events.",
   },
+  {
+    img: Project,
+    text: "Completed many projects in industries and university.",
+  },
+  {
+    img: ML,
+    text: "Passionate about Machine Learning and NLP. Currently working on a research paper on Sentiment Analysis.",
+  },
 ];
+
 
 const About: React.FC = () => {
   return (

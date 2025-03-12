@@ -91,9 +91,6 @@ const Projects = () => {
             <li>✅ Ensured seamless user experience with a responsive design and optimized database queries.</li>
           </ul>
         </div>
-
-
-
       </div>
     </div>
   );

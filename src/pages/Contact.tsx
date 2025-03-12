@@ -6,13 +6,12 @@ import TextArea from "antd/es/input/TextArea";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-16 px-6 bg-gray-50">
+    <div className="flex flex-col items-center justify-center py-16 px-6 ">
       <p className="text-lg font-semibold text-blue-600 uppercase tracking-wider">
         Contact Me
       </p>
 
-      <div className="flex flex-col md:flex-row bg-white shadow-xl rounded-2xl p-10 w-full max-w-5xl mt-6">
-        {/* Left Section - Contact Info */}
+      <div className="flex flex-col md:flex-row bg-white  rounded-2xl p-10 w-full max-w-5xl mt-6">
         <div className="md:w-1/2 pr-8 border-r border-gray-200">
           <h1 className="text-3xl font-bold mb-6 text-gray-800">Let's Connect</h1>
           <p className="text-gray-600 mb-8 leading-relaxed">
@@ -40,10 +39,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        {/* Right Section - Contact Form */}
         <div className="md:w-1/2 pl-8">
-          <Form layout="vertical" className="space-y-5">
+          <Form layout="vertical" >
             {/* Name */}
             <Form.Item
               label={<span className="text-lg font-medium text-gray-700">Your Name</span>}

@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#4599B4] shadow-lg">
+    <header className="bg-[#318CE7] shadow-lg ">
       <div className="container mx-auto pl-5 pr-20 py-4 flex justify-between items-center">
         <h1 className="text-4xl font-bold text-white border-3 rounded-2xl px-4 py-2">Naimur Rahman</h1>
         <nav className="hidden md:flex space-x-6">

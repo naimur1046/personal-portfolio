@@ -9,16 +9,27 @@ import Projects from './pages/Projects'
 function App() {
 
   return (
-    <div className="min-h-screen bg-gray-100">
-    <Header />
-    <main className="max-w-6xl mx-auto px-6 py-10">
+    <div >
+  <Header />
+  <main className='flex flex-col gap-12 md:gap-16 px-6 md:px-20 lg:px-32 ' >
+    <section id="home" className="flex items-center justify-center  border-gray-300">
       <Home />
+    </section>
+    <section id="about" >
       <About />
-      <Projects/>
-      <Experience/>
-      <Contact/>
-    </main>
-  </div>
+    </section>
+    <section id="projects" >
+      <Projects />
+    </section>
+    <section id="experience" >
+      <Experience />
+    </section>
+    <section id="contact">
+      <Contact />
+    </section>
+  </main>
+</div>
+
   )
 }
 

@@ -11,11 +11,11 @@ function App() {
   return (
     <div >
   <Header />
-  <main className='flex flex-col gap-12 md:gap-16 px-6 md:px-20 lg:px-32 ' >
+  <main className='flex flex-col' >
     <section id="home" className="flex items-center justify-center  border-gray-300">
       <Home />
     </section>
-    <section id="about" >
+    <section id="about" className="flex items-center justify-center " >
       <About />
     </section>
     <section id="projects" >

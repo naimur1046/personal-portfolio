@@ -1,18 +1,16 @@
 const Projects = () => {
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
+    <div className="container mx-auto px-12 py-12 bg-[#F7E8E4]">
+      <h1 className="text-5xl font-bold text-[#F7537B] text-center mb-15 ">
         Projects
       </h1>
-      <div className="grid md:grid-cols-2 gap-8">
-        
-        {/* Private Community Chat Application */}
-        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 transition transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+      <div className="grid md:grid-cols-2 gap-10">
+        <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
+          <h2 className="text-2xl font-semibold text-[#1e67db] dark:text-white text-center pt-2">
             Private Community Chat Application
           </h2>
-          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300">
-            OnnoRokom Projukti Limited | Software Research and Development Intern
+          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300 text-center pt-1 pb-2">
+            OnnoRokom Projukti Limited | Software R & D Intern
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
             <strong>Technologies:</strong> ASP.NET, React, TypeScript, Ant Design, Redux, Tailwind CSS, ORM, WebSockets
@@ -25,9 +23,7 @@ const Projects = () => {
             <li>✅ Gained industrial experience in full-stack development and enterprise system integration.</li>
           </ul>
         </div>
-
-        {/* Meeting Room Booking System */}
-        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 transition transform hover:scale-105">
+        <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
             Meeting Room Booking System
           </h2>
@@ -47,8 +43,7 @@ const Projects = () => {
             <li>✅ Gained hands-on experience in ASP.NET Core MVC and enterprise system development.</li>
           </ul>
         </div>
-        {/* Face Attendance System */}
-        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 transition transform hover:scale-105">
+        <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
             Face Attendance System
           </h2>
@@ -68,9 +63,7 @@ const Projects = () => {
             <li>✅ Gained practical experience in computer vision, deep learning, and biometric authentication.</li>
           </ul>
         </div>
-
-        {/* Blood Bank Management System */}
-        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 transition transform hover:scale-105">
+        <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
             Blood Bank Management System
           </h2>

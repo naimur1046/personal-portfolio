@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto pl-5 pr-20 py-4 flex justify-between items-center">
         <h1 className="text-4xl font-bold text-white border-3 rounded-2xl px-4 py-2">Naimur Rahman</h1>
         <nav className="hidden md:flex space-x-6">
-          {["Home", "About", "Work", "Blog", "Contact", "My Interest"].map((item) => (
+          {["Home", "About", "Projects", "Blog", "Contact", "My Interest"].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-2xl font-semibold text-white hover:text-[#F0F0F0]  shadow-white transition">
               {item}
             </a>

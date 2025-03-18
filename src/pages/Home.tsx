@@ -18,18 +18,22 @@ const Home: React.FC = () => {
       className="w-30 h-30 object-cover "
       src={IndicatingMe}/>
       <h1 className="text-3xl md:text-4xl font-bold text-[#1F75FE]">Hey, I'm Naimur Rahman</h1>
-      <p className="mt-2 text-gray-600 leading-relaxed">
-        Welcome to my portfolio! I am <span className="font-semibold text-blue-600">Naimur Rahman</span>, an ambitious undergraduate 
-        passionate about Artificial Intelligence, problem-solving, product planning, and development.
+      <p className="mt-2 text-gray-600 text-xl leading-relaxed">
+        I am an Associate Software Engineer at OnnoRokom Projukti Limited in the R&D Team, passionate about AI, 
+        problem-solving, product planning, event handling, and development. With a strong foundation 
+        in software engineering, I continuously explore new technologies to drive innovation and impactful results.
+       
       </p>
-      <div className="mt-3 flex items-center justify-center md:justify-start">
+      <div className="mt-5 flex items-center justify-end md:justify-end">
         <a
           href="/path-to-your-cv.pdf"
           download
-          className="flex items-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+          className="flex items-center gap-2 text-white pl-4  rounded-3xl border-5 border-[#1F75FE] shadow-md hover:bg-[#00BFFF]  transition duration-300"
         >
-          <span className="font-medium">Download CV</span>
-          <img src={Download} alt="Download" className="w-5 h-5" />
+          <span className="font-semibold text-xl  text-blue-500 hover:text-white">Download CV</span>
+          <div className="rounded-full border-4 border-[#90E8FF]">
+             <img src={Download} alt="Download" className="w-8 h-8 " />
+          </div>
         </a>
       </div>
     </div>

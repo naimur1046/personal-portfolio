@@ -1,12 +1,12 @@
 const Projects = () => {
   return (
-    <div className="container mx-auto px-12 py-12 bg-[#F7E8E4]">
+    <div className="w-full mx-auto px-20 py-12 bg-[#F7E8E4]">
       <h1 className="text-5xl font-bold text-[#F7537B] text-center mb-15 ">
         Projects
       </h1>
       <div className="grid md:grid-cols-2 gap-10">
         <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-[#1e67db] dark:text-white text-center pt-2">
+          <h2 className="text-2xl font-semibold text-[#FA8072] dark:text-white text-center pt-2">
             Private Community Chat Application
           </h2>
           <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300 text-center pt-1 pb-2">
@@ -24,10 +24,10 @@ const Projects = () => {
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+          <h2 className="text-2xl font-semibold text-[#FA8072] dark:text-white text-center pt-2">
             Meeting Room Booking System
           </h2>
-          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300">
+          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300 text-center pt-1 pb-2">
             OnnoRokom Projukti Limited | Software Developer Intern
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
@@ -44,11 +44,11 @@ const Projects = () => {
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+          <h2 className="text-2xl font-semibold text-[#FA8072] dark:text-white text-center pt-2">
             Face Attendance System
           </h2>
-          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300">
-            OnnoRokom Projukti Limited | Software Research and Development Intern
+          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300 text-center pt-1 pb-2">
+            OnnoRokom Projukti Limited | Software R & D Intern
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
             <strong>Technologies:</strong> Python, OpenCV, DeepFace, NumPy, Flask, SQLite
@@ -64,10 +64,10 @@ const Projects = () => {
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-900 border-4 border-[#CC909B] shadow-lg rounded-2xl px-10 py-8 transition transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+          <h2 className="text-2xl font-semibold text-[#FA8072] dark:text-white text-center pt-2">
             Blood Bank Management System
           </h2>
-          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300">
+          <h3 className="text-lg font-medium text-gray-600 dark:text-gray-300 text-center pt-1 pb-2">
             Red Crescent Blood Bank, Sylhet | University Project
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-400">

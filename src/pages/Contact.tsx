@@ -1,89 +1,57 @@
-import ContactImage from "../assets/phone-call.png";
-import Email from "../assets/email.png";
-import Location from "../assets/location.png";
-import { Button, Form, Input } from "antd";
-import TextArea from "antd/es/input/TextArea";
+import Signature from "../assets/signature.png";
+import Facebook from "../assets/facebook.png";
+import Instagram from "../assets/instagram.png";
+import Medium from "../assets/medium.png";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-16 px-6 ">
-      <p className="text-lg font-semibold text-blue-600 uppercase tracking-wider">
-        Contact Me
-      </p>
+    <div className="flex flex-col items-center justify-center py-20 px-8 bg-[#F8F8F8]">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-[#ee6cb8] text-center mb-12">
+        Get in Touch
+      </h1>
 
-      <div className="flex flex-col md:flex-row bg-white  rounded-2xl p-10 w-full max-w-5xl mt-6">
-        <div className="md:w-1/2 pr-8 border-r border-gray-200">
-          <h1 className="text-3xl font-bold mb-6 text-gray-800">Let's Connect</h1>
-          <p className="text-gray-600 mb-8 leading-relaxed">
-            Have questions, collaboration ideas, or just want to say hi? 
-            Fill out the form or reach out to me directly through email or phone.
-          </p>
-          
-          <div className="space-y-6">
-            {/* Location */}
-            <div className="flex items-center space-x-4">
-              <img src={Location} alt="Location Icon" className="w-7 h-7" />
-              <p className="text-gray-700 text-lg">Noakhali, Chattogram, Bangladesh</p>
-            </div>
+      <div className="flex flex-col md:flex-row w-full max-w-4xl justify-between items-center gap-12">
+        {/* Contact Info */}
+        <div className="flex flex-col items-center text-center">
+          <img src={Signature} alt="Signature" className="h-24 w-24 mb-4" />
+          <p className="text-2xl font-bold text-[#13C9D6]">Naimur Rahman</p>
+          <p className="text-gray-500 text-sm">© 2025. All rights reserved.</p>
 
-            {/* Phone */}
-            <div className="flex items-center space-x-4">
-              <img src={ContactImage} alt="Phone Icon" className="w-7 h-7" />
-              <p className="text-gray-700 text-lg">01788360952</p>
-            </div>
-
-            {/* Email */}
-            <div className="flex items-center space-x-4">
-              <img src={Email} alt="Email Icon" className="w-7 h-7" />
-              <p className="text-gray-700 text-lg">naimurrahman1046@gmail.com</p>
-            </div>
+          {/* Social Icons */}
+          <div className="flex space-x-6 mt-6">
+            <img src={Facebook} alt="Facebook" className="h-10 cursor-pointer hover:opacity-75 transition" />
+            <img src={Instagram} alt="Instagram" className="h-10 cursor-pointer hover:opacity-75 transition" />
+            <img src={Medium} alt="Medium" className="h-10 cursor-pointer hover:opacity-75 transition" />
           </div>
         </div>
-        <div className="md:w-1/2 pl-8">
-          <Form layout="vertical" >
-            {/* Name */}
-            <Form.Item
-              label={<span className="text-lg font-medium text-gray-700">Your Name</span>}
-              name="name"
-              rules={[{ required: true, message: "Please enter your name." }]}
-            >
-              <Input className="py-2 px-4 border rounded-lg" />
-            </Form.Item>
 
-            {/* Email */}
-            <Form.Item
-              label={<span className="text-lg font-medium text-gray-700">Email</span>}
-              name="email"
-              rules={[{ required: true, message: "Please enter your email." }]}
-            >
-              <Input className="py-2 px-4 border rounded-lg" />
-            </Form.Item>
-
-            {/* Subject */}
-            <Form.Item
-              label={<span className="text-lg font-medium text-gray-700">Subject</span>}
-              name="subject"
-            >
-              <Input className="py-2 px-4 border rounded-lg" />
-            </Form.Item>
-
-            {/* Message */}
-            <Form.Item
-              label={<span className="text-lg font-medium text-gray-700">Your Message</span>}
-              name="comment"
-              rules={[{ required: true, message: "Please enter your comment." }]}
-            >
-              <TextArea rows={4} className="py-2 px-4 border rounded-lg" />
-            </Form.Item>
-
-            {/* Submit Button */}
-            <Form.Item>
-              <Button type="primary" htmlType="submit" className="w-full py-3 text-lg rounded-lg">
-                Send Message
-              </Button>
-            </Form.Item>
-          </Form>
-        </div>
+        {/* Contact Form */}
+        <form className="flex flex-col w-full max-w-md space-y-5 bg-white p-6 rounded-xl shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ee6cb8]"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ee6cb8]"
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ee6cb8]"
+          />
+          <textarea
+            placeholder="Your Message..."
+            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ee6cb8] h-36 resize-none"
+          ></textarea>
+          <button className="w-full bg-[#ee6cb8] text-white py-3 rounded-md font-semibold hover:bg-[#d65ca8] transition-all shadow-md">
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       </div>
       <div className="mt-5 flex items-center justify-end md:justify-end">
         <a
-          href="/path-to-your-cv.pdf"
+          href="https://drive.google.com/drive/folders/1qZQtdmRlar6E0iSr1UnqutANnFNYo1lP?usp=sharing"
           download
           className="flex items-center gap-2 text-white pl-4  rounded-3xl border-5 border-[#318CE7] shadow-md hover:bg-[#00BFFF]  transition duration-300"
         >

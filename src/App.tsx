@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Experience from './pages/Experience'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import OrganizingExperience from './pages/OrganizingExperience'
 
 function App() {
 
@@ -21,12 +22,13 @@ function App() {
     <section id="projects" >
       <Projects />
     </section>
-    <section id="experience" >
-      <Experience />
+    <section id="experience">
+      <OrganizingExperience/>
     </section>
     <section id="contact">
       <Contact />
     </section>
+    
   </main>
 </div>
 

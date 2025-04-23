@@ -47,7 +47,7 @@ const OrganizingExperience = () => {
                 animate={{
                   opacity: 1,
                   x: 0,
-                  borderColor: ["#9EC6F3", "#E9A5F1", "#9EC6F3", "#E6B2BA"],
+                  borderColor: ["#FB9EC6", "#FF76CE", "#88D66C", "#E6B2BA","EC7FA9"],
                 }}
                 transition={{
                   x: { duration: 0.6 },

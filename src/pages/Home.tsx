@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       <div className="w-full">
       <h1 className="text-3xl md:text-4xl font-bold text-[#1F75FE]">Hey, I'm Naimur Rahman</h1>
       <p className="mt-2 text-gray-600 text-xl leading-relaxed text-justify">
-        I am an Associate Software Engineer at OnnoRokom Projukti Limited in the R&D Team, passionate about AI, 
+        I am an Assistant Software Engineer at OnnoRokom Projukti Limited in the R&D Team, passionate about AI, 
         problem-solving, product planning, event handling, and development. With a strong foundation 
         in software engineering, I continuously explore new technologies to drive innovation and impactful results.
       </p>

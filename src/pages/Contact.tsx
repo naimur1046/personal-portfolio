@@ -1,4 +1,8 @@
 import Illustration from "../assets/illustration.png";
+import User from "../assets/user.png"
+import Email from "../assets/email.png"
+import Phone from "../assets/phone.png"
+import Message from "../assets/message.png"
 const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center py-25 px-8 bg-[#E8EEFC]">
@@ -18,49 +22,41 @@ const Contact = () => {
         {/* Right form */}
         <div className="md:w-1/2 p-8 flex flex-col space-y-6">
           <form className="flex flex-col space-y-5">
-            <div>
-              <label className="block mb-1 text-gray-600">
-                <i className="fas fa-user mr-2"></i>Name
-              </label>
+            <div className="relative flex items-center w-full">
+              <img src={User} alt="Name Logo" className="absolute left-3 w-7 h-7" />
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full p-3 bg-[#E8F0FF] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
               />
             </div>
-
-            <div>
-              <label className="block mb-1 text-gray-600">
-                <i className="fas fa-envelope mr-2"></i>Email
-              </label>
+            <div className="relative flex items-center w-full">
+              <img src={Email} alt="Name Logo" className="absolute left-3 w-7 h-7" />
               <input
-                type="email"
+                type="text"
                 placeholder="Email"
-                className="w-full p-3 bg-[#E8F0FF] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
               />
             </div>
-
-            <div>
-              <label className="block mb-1 text-gray-600">
-                <i className="fas fa-phone mr-2"></i>Phone
-              </label>
+            <div className="relative flex items-center w-full">
+              <img src={Phone} alt="Name Logo" className="absolute left-3 w-7 h-7" />
               <input
-                type="tel"
-                placeholder="Phone"
-                className="w-full p-3 bg-[#E8F0FF] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                type="text"
+                placeholder="Mobile"
+                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
               />
             </div>
-
-            <div>
-              <label className="block mb-1 text-gray-600">
-                <i className="fas fa-comment mr-2"></i>Message
-              </label>
+            <div className="relative w-full">
+              <img
+                src={Message}
+                alt="Message Icon"
+                className="absolute top-4 left-4 w-8 h-8 text-gray-500"
+              />
               <textarea
                 placeholder="Message"
-                className="w-full p-3 bg-[#E8F0FF] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF] h-36 resize-none"
+                className="w-full pl-14 pr-4 pt-4 pb-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF] h-36 resize-none"
               />
             </div>
-
             <button
               type="submit"
               className="self-end bg-[#6B28FF] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#5820c9] transition-shadow shadow-lg flex items-center space-x-2"

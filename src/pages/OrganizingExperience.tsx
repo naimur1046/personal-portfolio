@@ -30,8 +30,8 @@ const experiences: Experience[] = [
 
 const OrganizingExperience = () => {
   return (
-    <div className="w-full mx-auto px-6 md:px-20 py-16 bg-[#023020]">
-      <h1 className="text-5xl font-bold text-white text-center mb-20">Organizing Experience</h1>
+    <div className="w-full mx-auto px-6 md:px-20 py-16 bg-[#99927b]">
+      <h1 className="text-5xl font-bold text-white text-center mb-20">Organizing <span className="text-[#FFE893]">Experience</span></h1>
 
       {/* Vertical line */}
       <div className="relative">

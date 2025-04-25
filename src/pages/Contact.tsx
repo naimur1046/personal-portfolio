@@ -3,6 +3,7 @@ import User from "../assets/user.png"
 import Email from "../assets/email.png"
 import Phone from "../assets/phone.png"
 import Message from "../assets/message.png"
+import Send from "../assets/send.png"
 const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center py-25 px-8 bg-[#E8EEFC]">
@@ -59,10 +60,13 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="self-end bg-[#6B28FF] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#5820c9] transition-shadow shadow-lg flex items-center space-x-2"
-            >
-              <span>Submit</span>
-              <i className="fas fa-paper-plane"></i>
+              className="self-end bg-[#6B28FF] text-white text-lg px-6 py-3 rounded-md font-semibold hover:bg-[#5820c9] transition-shadow shadow-lg flex items-center space-x-2">
+              <span>SUBMIT</span>
+              <img
+                src={Send}
+                alt="Send Icon"
+                className="w-7 h-7"
+              />
             </button>
           </form>
         </div>

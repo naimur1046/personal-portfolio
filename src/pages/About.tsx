@@ -1,12 +1,13 @@
+import { motion } from "framer-motion";
 import ResearchAndDevelopment from "../assets/research-and-development.png";
 import Development from "../assets/development.png";
 import CompetitiveProgramming from "../assets/competitive-programming.png";
 import Institute from "../assets/institute.png";
 import EventOrganized from "../assets/project-management.png";
 import Project from "../assets/project-idea.png";
-import ML from "../assets/ml.png"
-import ReadingBook from "../assets/reading-book.png"
-import DebateSpeech from "../assets/debate-speech.png"
+import ML from "../assets/ml.png";
+import ReadingBook from "../assets/reading-book.png";
+import DebateSpeech from "../assets/debate-speech.png";
 
 const aboutItems = [
   {
@@ -38,31 +39,85 @@ const aboutItems = [
     text: "Passionate about Machine Learning and NLP. Currently working on a research paper on Sentiment Analysis.",
   },
   {
-    img:ReadingBook,
-    text:"Passionate about reading books—exploring different worlds, gaining new perspectives, and continuously learning."
+    img: ReadingBook,
+    text: "Passionate about reading books—exploring different worlds, gaining new perspectives, and continuously learning.",
   },
   {
-    img:DebateSpeech,
-    text:"Experienced in public speaking and debate confidence, engaging audiences, and mastering the art of persuasion."
-  }
+    img: DebateSpeech,
+    text: "Experienced in public speaking and debate confidence, engaging audiences, and mastering the art of persuasion.",
+  },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 },
+  },
+};
 
-const About: React.FC = () => {
+const item = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const About = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-[#D8E5EC] py-10 px-6 ">
-      <h1 className="text-5xl font-bold text-[#3f71ae] mb-10 ">About Me</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-10 max-w-5xl">
-        {aboutItems.map((item, index) => (
-          <div
+    <div className="w-full min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#111827] to-[#0c1220] py-20 px-6">
+      {/* Section Title */}
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl font-bold text-white">
+          About{" "}
+          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Me
+          </span>
+        </h1>
+      </motion.div>
+
+      {/* Cards Grid */}
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+      >
+        {aboutItems.map((about, index) => (
+          <motion.div
             key={index}
-            className="flex flex-col items-center bg-white shadow-lg rounded-xl p-10 py-4 border-4 border-[#8FAED4] hover:scale-105 transition-transform duration-300"
+            variants={item}
+            whileHover={{ scale: 1.03, y: -6 }}
+            className="relative group"
           >
-            <img src={item.img} alt="About Icon" className="w-30 h-30 mb-4" />
-            <p className="text-gray-700 text-center text-lg">{item.text}</p>
-          </div>
+            {/* Glow effect */}
+            <div className="absolute -inset-[1px] rounded-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-lg bg-gradient-to-r from-cyan-500 to-purple-600" />
+
+            {/* Card */}
+            <div className="relative bg-white/[0.05] backdrop-blur-sm rounded-2xl p-8 border border-white/10 group-hover:border-white/20 transition-all duration-300 flex flex-col items-center h-full">
+              {/* Icon container */}
+              <div className="w-20 h-20 rounded-xl bg-white/[0.08] border border-white/10 flex items-center justify-center mb-5">
+                <img src={about.img} alt="About Icon" className="w-12 h-12" />
+              </div>
+
+              {/* Text */}
+              <p className="text-gray-400 text-center text-sm leading-relaxed">
+                {about.text}
+              </p>
+
+              {/* Bottom accent bar */}
+              <div className="mt-auto pt-5 w-full">
+                <div className="h-[2px] w-0 group-hover:w-full rounded-full transition-all duration-500 bg-gradient-to-r from-cyan-500 to-purple-600" />
+              </div>
+            </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

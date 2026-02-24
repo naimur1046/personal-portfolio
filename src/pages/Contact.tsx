@@ -1,75 +1,131 @@
-import Illustration from "../assets/illustration.png";
-import User from "../assets/user.png"
-import Email from "../assets/email.png"
-import Phone from "../assets/phone.png"
-import Message from "../assets/message.png"
-import Send from "../assets/send.png"
+import { motion } from "framer-motion";
+import { HiUser, HiMail, HiPhone, HiChat } from "react-icons/hi";
+import { socialLinks } from "../constants/socialLinks";
+
+const contactInfo = [
+  { icon: HiMail, label: "Email", value: "naimurrahmanrumel@gmail.com" },
+  { icon: HiPhone, label: "Phone", value: "+880 1234 567890" },
+];
+
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-25 px-8 bg-[#E8EEFC]">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12">
-        <span className="text-black">Get In</span>{" "}
-        <span className="text-[#6B28FF]">Touch</span>
-      </h1>
+    <div className="w-full bg-gradient-to-b from-[#0c1220] via-[#111827] to-[#0a0f1a] py-20 px-6">
+      {/* Section Title */}
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
+      >
+        <h1 className="text-5xl font-bold text-white">
+          Get In{" "}
+          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Touch
+          </span>
+        </h1>
+        <p className="text-gray-400 text-lg mt-4 max-w-xl mx-auto">
+          Have a question or want to work together? Feel free to reach out.
+        </p>
+      </motion.div>
 
-      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden">
-        <div className="md:w-1/2 h-80 md:h-auto md:min-h-[400px] overflow-hidden rounded-l-xl">
-          <img
-            src={Illustration}
-            alt="Contact illustration"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        {/* Right form */}
-        <div className="md:w-1/2 p-8 flex flex-col space-y-6">
-          <form className="flex flex-col space-y-5">
-            <div className="relative flex items-center w-full">
-              <img src={User} alt="Name Logo" className="absolute left-3 w-7 h-7" />
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
+        {/* Left - Contact Info */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="lg:w-2/5 flex flex-col gap-6"
+        >
+          {contactInfo.map((info) => (
+            <div
+              key={info.label}
+              className="flex items-center gap-4 bg-white/[0.05] backdrop-blur-sm rounded-xl p-5 border border-white/10"
+            >
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-cyan-500/20 to-purple-600/20 flex items-center justify-center">
+                <info.icon className="w-5 h-5 text-cyan-400" />
+              </div>
+              <div>
+                <p className="text-gray-500 text-sm">{info.label}</p>
+                <p className="text-white font-medium">{info.value}</p>
+              </div>
+            </div>
+          ))}
+
+          {/* Social Links */}
+          <div className="mt-4">
+            <p className="text-gray-500 text-sm mb-3">Find me on</p>
+            <div className="flex gap-3">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
+                >
+                  <link.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Right - Form */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="lg:w-3/5"
+        >
+          <form className="bg-white/[0.05] backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex flex-col gap-5">
+            <div className="relative">
+              <HiUser className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                className="w-full pl-12 pr-4 py-3 bg-white/[0.05] border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
               />
             </div>
-            <div className="relative flex items-center w-full">
-              <img src={Email} alt="Name Logo" className="absolute left-3 w-7 h-7" />
+
+            <div className="relative">
+              <HiMail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
               <input
-                type="text"
+                type="email"
                 placeholder="Email"
-                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                className="w-full pl-12 pr-4 py-3 bg-white/[0.05] border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
               />
             </div>
-            <div className="relative flex items-center w-full">
-              <img src={Phone} alt="Name Logo" className="absolute left-3 w-7 h-7" />
+
+            <div className="relative">
+              <HiPhone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
               <input
                 type="text"
-                placeholder="Mobile"
-                className="w-full pl-12 p-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF]"
+                placeholder="Phone"
+                className="w-full pl-12 pr-4 py-3 bg-white/[0.05] border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
               />
             </div>
-            <div className="relative w-full">
-              <img
-                src={Message}
-                alt="Message Icon"
-                className="absolute top-4 left-4 w-8 h-8 text-gray-500"
-              />
+
+            <div className="relative">
+              <HiChat className="absolute left-4 top-4 w-5 h-5 text-gray-500" />
               <textarea
                 placeholder="Message"
-                className="w-full pl-14 pr-4 pt-4 pb-3 bg-[#E8F0FF] font-semibold text-lg text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#6B28FF] h-36 resize-none"
+                rows={5}
+                className="w-full pl-12 pr-4 py-3 bg-white/[0.05] border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/30 transition-colors resize-none"
               />
             </div>
+
             <button
               type="submit"
-              className="self-end bg-[#6B28FF] text-white text-lg px-6 py-3 rounded-md font-semibold hover:bg-[#5820c9] transition-shadow shadow-lg flex items-center space-x-2">
-              <span>SUBMIT</span>
-              <img
-                src={Send}
-                alt="Send Icon"
-                className="w-7 h-7"
-              />
+              className="self-end px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+            >
+              Send Message
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

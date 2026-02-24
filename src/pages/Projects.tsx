@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import type { IconType } from "react-icons";
+import { HiAcademicCap, HiGlobeAlt, HiChatBubbleLeftRight, HiCalendarDays, HiMagnifyingGlass, HiHeart } from "react-icons/hi2";
 
 interface Project {
   title: string;
@@ -6,7 +8,7 @@ interface Project {
   description: string[];
   tech: string[];
   accent: string;
-  icon: string;
+  icon: IconType;
   category: string;
   featured?: boolean;
 }
@@ -22,7 +24,7 @@ const projects: Project[] = [
     ],
     tech: ["React", "Redux", "Tailwind CSS", "ASP.NET", "Redis"],
     accent: "#06b6d4",
-    icon: "🎓",
+    icon: HiAcademicCap,
     category: "Professional",
     featured: true,
   },
@@ -45,7 +47,7 @@ const projects: Project[] = [
       "Swagger",
     ],
     accent: "#a855f7",
-    icon: "🌐",
+    icon: HiGlobeAlt,
     category: "Open Source",
     featured: true,
   },
@@ -66,7 +68,7 @@ const projects: Project[] = [
       "WebSockets",
     ],
     accent: "#f59e0b",
-    icon: "💬",
+    icon: HiChatBubbleLeftRight,
     category: "Professional",
   },
   {
@@ -85,7 +87,7 @@ const projects: Project[] = [
       "FullCalendar",
     ],
     accent: "#10b981",
-    icon: "📅",
+    icon: HiCalendarDays,
     category: "Professional",
   },
   {
@@ -98,7 +100,7 @@ const projects: Project[] = [
     ],
     tech: ["Python", "OpenCV", "DeepFace", "NumPy", "Flask", "SQLite"],
     accent: "#ef4444",
-    icon: "🔍",
+    icon: HiMagnifyingGlass,
     category: "R & D",
   },
   {
@@ -111,7 +113,7 @@ const projects: Project[] = [
     ],
     tech: ["React", "Tailwind CSS", "Node.js", "Express", "MySQL"],
     accent: "#ec4899",
-    icon: "🩸",
+    icon: HiHeart,
     category: "University",
   },
 ];
@@ -243,7 +245,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
             backgroundColor: `${project.accent}10`,
           }}
         >
-          {project.icon}
+          <project.icon className="w-6 h-6 text-white" />
         </div>
       </div>
 

@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import type { IconType } from "react-icons";
+import { HiRocketLaunch } from "react-icons/hi2";
+import { FaCrown, FaHandshake, FaTheaterMasks } from "react-icons/fa";
 
 interface Experience {
   title: string;
   role: string;
   description: string;
-  icon: string;
+  icon: IconType;
   accent: string;
 }
 
@@ -14,7 +17,7 @@ const experiences: Experience[] = [
     role: "Co-Convenor & Founder",
     description:
       "In the absence of a dedicated organization for Noakhali students at SUST, we took the initiative to establish the Noakhali Association, SUST. Throughout this journey, we encountered various challenges but remained committed to our vision...",
-    icon: "🚀",
+    icon: HiRocketLaunch,
     accent: "#06b6d4",
   },
   {
@@ -22,7 +25,7 @@ const experiences: Experience[] = [
     role: "President",
     description:
       "I currently serve as the President of Noakhali Association, SUST, an organization with over 100 active members. During my tenure, I have successfully organized seven programs, engaging students, faculty members, and others...",
-    icon: "👑",
+    icon: FaCrown,
     accent: "#f59e0b",
   },
   {
@@ -30,7 +33,7 @@ const experiences: Experience[] = [
     role: "General Secretary",
     description:
       "I currently serve as the General Secretary of Fusion Students Association, Subarnachar, a platform for public university students from my homeland. This organization is dedicated to raising awareness and supporting education...",
-    icon: "🤝",
+    icon: FaHandshake,
     accent: "#10b981",
   },
   {
@@ -38,7 +41,7 @@ const experiences: Experience[] = [
     role: "Ex. General Secretary",
     description:
       "I served as the General Secretary of Ongikar, a cultural organization at SUST. During my tenure, I worked to promote cultural growth and participated in poetry recitation events and cultural programs...",
-    icon: "🎭",
+    icon: FaTheaterMasks,
     accent: "#a855f7",
   },
 ];
@@ -113,7 +116,7 @@ const OrganizingExperience = () => {
                       className="w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg border-[3px] border-[#0c1220]"
                       style={{ backgroundColor: exp.accent, boxShadow: `0 0 20px ${exp.accent}50` }}
                     >
-                      {exp.icon}
+                      <exp.icon className="w-5 h-5 text-white" />
                     </div>
                   </motion.div>
 
@@ -148,7 +151,7 @@ const OrganizingExperience = () => {
                       className="w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg border-[3px] border-[#0c1220]"
                       style={{ backgroundColor: exp.accent, boxShadow: `0 0 20px ${exp.accent}50` }}
                     >
-                      {exp.icon}
+                      <exp.icon className="w-5 h-5 text-white" />
                     </div>
                   </motion.div>
 

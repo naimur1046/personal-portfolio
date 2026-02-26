@@ -84,13 +84,14 @@ const Home = () => {
                 href="https://drive.google.com/drive/folders/1qZQtdmRlar6E0iSr1UnqutANnFNYo1lP?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm sm:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                className="group relative px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm sm:text-base font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-xl hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all duration-300 overflow-hidden"
               >
-                Download CV
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <span className="relative">Download CV</span>
               </a>
               <a
                 href="#contact"
-                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/20 text-white text-sm sm:text-base font-semibold hover:bg-white/5 hover:border-white/40 transition-all duration-300"
+                className="relative px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-500/10 to-purple-600/10 border border-cyan-500/30 text-white text-sm sm:text-base font-semibold hover:from-cyan-500 hover:to-purple-600 hover:border-transparent hover:shadow-xl hover:shadow-purple-500/30 hover:scale-105 active:scale-95 transition-all duration-300"
               >
                 Contact Me
               </a>

@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <div className="w-full min-h-screen flex items-center bg-gradient-to-br from-[#0a0f1a] via-[#0c1220] to-[#111827]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           {/* Text Content */}
           <motion.div
@@ -60,9 +60,6 @@ const Home = () => {
             animate="visible"
             className="flex-1 text-center lg:text-left"
           >
-            <motion.p variants={item} className="text-cyan-400 text-lg font-medium mb-2">
-              Hello, I'm
-            </motion.p>
 
             <motion.h1 variants={item} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Naimur Rahman Rumel

@@ -51,8 +51,8 @@ const Home = () => {
 
   return (
     <div className="w-full min-h-screen flex items-center bg-gradient-to-br from-[#0a0f1a] via-[#0c1220] to-[#111827]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-16 sm:py-0 w-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20">
           {/* Text Content */}
           <motion.div
             variants={container}
@@ -61,43 +61,43 @@ const Home = () => {
             className="flex-1 text-center lg:text-left"
           >
 
-            <motion.h1 variants={item} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            <motion.h1 variants={item} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4">
               Naimur Rahman Rumel
             </motion.h1>
 
-            <motion.div variants={item} className="mb-6">
-              <span className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <motion.div variants={item} className="mb-4 sm:mb-6">
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 {text}
               </span>
-              <span className="text-2xl md:text-3xl font-semibold text-cyan-400 animate-pulse">|</span>
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-cyan-400 animate-pulse">|</span>
             </motion.div>
 
-            <motion.p variants={item} className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
+            <motion.p variants={item} className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-6 sm:mb-8">
               I am a Software Engineer at Surbana Jurong, passionate about AI,
               problem-solving, product planning, event handling, and development. With a strong foundation
               in software engineering, I continuously explore new technologies to drive innovation and impactful results.
             </motion.p>
 
             {/* CTA Buttons */}
-            <motion.div variants={item} className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
+            <motion.div variants={item} className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
               <a
                 href="https://drive.google.com/drive/folders/1qZQtdmRlar6E0iSr1UnqutANnFNYo1lP?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-7 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm sm:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
               >
                 Download CV
               </a>
               <a
                 href="#contact"
-                className="px-7 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/5 hover:border-white/40 transition-all duration-300"
+                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full border border-white/20 text-white text-sm sm:text-base font-semibold hover:bg-white/5 hover:border-white/40 transition-all duration-300"
               >
                 Contact Me
               </a>
             </motion.div>
 
             {/* Social Links */}
-            <motion.div variants={item} className="flex gap-4 justify-center lg:justify-start">
+            <motion.div variants={item} className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
@@ -105,9 +105,9 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="w-11 h-11 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300"
+                  className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/15 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300"
                 >
-                  <link.icon className="w-5 h-5" />
+                  <link.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               ))}
             </motion.div>
@@ -123,7 +123,7 @@ const Home = () => {
             <div className="relative">
               {/* Gradient glow ring */}
               <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-600 opacity-60 blur-lg" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-white/10">
+              <div className="relative w-44 h-44 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-white/10">
                 <img
                   src={RumelPhoto}
                   alt="Naimur Rahman Rumel"

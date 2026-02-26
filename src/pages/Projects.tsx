@@ -28,30 +28,7 @@ const projects: Project[] = [
     category: "Professional",
     featured: true,
   },
-  {
-    title: "Open Community Platform",
-    subtitle: "OnnoRokom Projukti Limited | Open Source Contributor",
-    description: [
-      "Contributed to requirement analysis, system design, and developed core features for a scalable, open-source community platform.",
-      "Built Event Management module on the frontend and Donation Management on the backend.",
-      "Followed Clean Architecture principles with robust API design using Minimal API pattern.",
-    ],
-    tech: [
-      "React",
-      "Redux",
-      "Tailwind CSS",
-      "ASP.NET",
-      "PostgreSQL",
-      "EF Core",
-      "JWT",
-      "Swagger",
-    ],
-    accent: "#a855f7",
-    icon: HiGlobeAlt,
-    category: "Open Source",
-    featured: true,
-  },
-  {
+   {
     title: "Private Community Chat Application",
     subtitle: "OnnoRokom Projukti Limited | Software R & D Intern",
     description: [
@@ -102,6 +79,29 @@ const projects: Project[] = [
     accent: "#ef4444",
     icon: HiMagnifyingGlass,
     category: "R & D",
+  },
+  {
+    title: "Open Community Platform",
+    subtitle: "Open Source Contributor",
+    description: [
+      "Contributed to requirement analysis, system design, and developed core features for a scalable, open-source community platform.",
+      "Built Event Management module on the frontend and Donation Management on the backend.",
+      "Followed Clean Architecture principles with robust API design using Minimal API pattern.",
+    ],
+    tech: [
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "ASP.NET",
+      "PostgreSQL",
+      "EF Core",
+      "JWT",
+      "Swagger",
+    ],
+    accent: "#a855f7",
+    icon: HiGlobeAlt,
+    category: "Open Source",
+    featured: true,
   },
   {
     title: "Blood Bank Management System",

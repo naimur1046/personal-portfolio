@@ -25,9 +25,8 @@ const experiences: WorkExperience[] = [
     description: [
       "Developing and maintaining scalable enterprise software solutions for urban and infrastructure projects.",
       "Collaborating with cross-functional teams to design, implement, and deliver features aligned with business requirements.",
-      "Participating in code reviews, sprint planning, and continuous improvement of development workflows.",
     ],
-    tech: ["React", "TypeScript", "Tailwind CSS", ".NET", "Azure"],
+    tech: ["React", "TypeScript", "Tailwind CSS", ".NET", "IOT"],
     accent: "#06b6d4",
     icon: HiBuildingOffice2,
   },
@@ -38,7 +37,6 @@ const experiences: WorkExperience[] = [
     duration: "Oct 2024 – Feb 2026",
     description: [
       "Built ICR — Interactive Classroom with live streaming via Google YouTube API, real-time hand-raise moderation, and scheduler system for automated meeting management.",
-      "Contributed to an open-source community platform with Event Management (frontend) and Donation Management (backend) following Clean Architecture and Minimal API patterns.",
       "Developed a real-time private community chat application using WebSockets with React and ASP.NET.",
       "Created a meeting room booking system with cookie-based auth, FullCalendar integration, and QR code sharing.",
       "Implemented a face recognition-based attendance system using DeepFace, OpenCV, and Flask with anti-spoofing detection.",
@@ -53,7 +51,8 @@ const experiences: WorkExperience[] = [
       "Redis",
       "Python",
       "OpenCV",
-      "Flask",
+      "DeepFace",
+      "PoastgreSQL",
     ],
     accent: "#a855f7",
     icon: HiCodeBracket,

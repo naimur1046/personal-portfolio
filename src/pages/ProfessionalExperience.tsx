@@ -52,7 +52,6 @@ const experiences: WorkExperience[] = [
       "Python",
       "OpenCV",
       "DeepFace",
-      "PoastgreSQL",
     ],
     accent: "#a855f7",
     icon: HiCodeBracket,

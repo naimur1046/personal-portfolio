@@ -16,7 +16,7 @@ const aboutItems = [
   },
   {
     img: ResearchAndDevelopment,
-    text: "I am currently in the Research & Development team at OnnoRokom Projukti Limited.",
+    text: "I worked in the Research & Development team at OnnoRokom Projukti Limited.",
   },
   {
     img: CompetitiveProgramming,

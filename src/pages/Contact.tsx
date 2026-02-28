@@ -9,8 +9,8 @@ const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
 const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
 const contactInfo = [
-  { icon: HiMail, label: "Email", value: "naimurrahmanrumel@gmail.com" },
-  { icon: HiPhone, label: "Phone", value: "+880 1234 567890" },
+  { icon: HiMail, label: "Email", value: "naimurrahman1046@gmail.com" },
+  { icon: HiPhone, label: "Mobile Number", value: "+8801788360952" },
 ];
 
 const Contact = () => {

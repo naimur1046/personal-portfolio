@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 
-const navItems = ["Home", "About", "Work", "Projects", "Research", "Experience", "Contact"];
+const navItems = ["Home", "About", "Work", "Projects", "Research", "Blog", "Experience", "Contact"];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -63,6 +63,7 @@ const experiences: WorkExperience[] = [
       "Postman",
       "FullCalendar",
       "RTMP streaming",
+      "WebSockets",
     ],
     accent: "#a855f7",
     icon: HiCodeBracket,

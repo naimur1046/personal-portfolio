@@ -60,7 +60,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => handleNavClick(item)}
-                className={`relative text-sm font-medium transition-colors pb-1 ${
+                className={`relative text-sm font-medium transition-colors pb-1 cursor-pointer ${
                   isActive ? "text-white" : "text-gray-300 hover:text-white"
                 }`}
               >
@@ -99,7 +99,7 @@ const Header = () => {
                 <button
                   key={item}
                   onClick={() => handleNavClick(item)}
-                  className={`text-base font-medium transition-colors ${
+                  className={`text-base font-medium transition-colors cursor-pointer ${
                     activeSection === item.toLowerCase()
                       ? "text-white"
                       : "text-gray-400 hover:text-white"

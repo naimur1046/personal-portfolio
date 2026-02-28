@@ -4,9 +4,9 @@ import { HiUser, HiMail, HiPhone, HiChat } from "react-icons/hi";
 import emailjs from "@emailjs/browser";
 import { socialLinks } from "../constants/socialLinks";
 
-const SERVICE_ID = "YOUR_SERVICE_ID";
-const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const SERVICE_ID = "service_5wtmuth";
+const TEMPLATE_ID = "template_yy6ndcd";
+const PUBLIC_KEY = "jIzywnpjV4URm-KnD";
 
 const contactInfo = [
   { icon: HiMail, label: "Email", value: "naimurrahman1046@gmail.com" },

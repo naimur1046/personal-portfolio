@@ -47,6 +47,7 @@ const projects: Project[] = [
     accent: "#f59e0b",
     icon: HiChatBubbleLeftRight,
     category: "Professional",
+    featured: true,
   },
   {
     title: "Meeting Room Booking System",
@@ -101,7 +102,6 @@ const projects: Project[] = [
     accent: "#a855f7",
     icon: HiGlobeAlt,
     category: "Open Source",
-    featured: true,
   },
   {
     title: "Blood Bank Management System",

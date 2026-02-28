@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Research from './pages/Research'
 import OrganizingExperience from './pages/OrganizingExperience'
 import ProfessionalExperience from './pages/ProfessionalExperience'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </section>
         <section id="research" className="scroll-mt-20">
           <Research />
+        </section>
+        <section id="blog" className="scroll-mt-20">
+          <Blog />
         </section>
         <section id="experience" className="scroll-mt-20">
           <OrganizingExperience />

@@ -8,8 +8,13 @@ import Project from "../assets/project-idea.png";
 import ML from "../assets/ml.png";
 import ReadingBook from "../assets/reading-book.png";
 import DebateSpeech from "../assets/debate-speech.png";
+import SurbanaJurongGroup from "../assets/surbanajuronggroup.jpg";
 
 const aboutItems = [
+  {
+    img: SurbanaJurongGroup,
+    text: "I am currently working as a Software Engineer Level 01 at Surbana Jurong, contributing to enterprise software solutions for urban and infrastructure projects.",
+  },
   {
     img: Development,
     text: "I was a Trainee Software Engineer at OnnoRokom Projukti Limited in the Software Development team.",
